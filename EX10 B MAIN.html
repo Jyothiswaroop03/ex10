@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\Users\N.HEMANTH KUMAR\Desktop\New folder\Q2\style1.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script>
+        var app = angular.module('myapp', ['ngRoute']);
+        app.config(function($routeProvider){
+            $routeProvider.when('/EX10HEMANTH', {
+                templateUrl: 'EX10HEMANTH.html'
+            })
+            .when('/EX10NAVEEN', {
+                templateUrl: 'EX10 NAVEEN.html'
+            })
+            .when('/EX10 JEEVAN', {
+                templateUrl: 'EX10 JEEVAN.html'
+            })
+            .when('/EX10 JYOTHI', {
+                templateUrl: 'EX10 JYOTHI.html'
+            })
+        });
+    </script>
+</head>
+<body ng-app="myapp">
+    <h1><center>student dashboard</center></h1>
+    <hr>
+    <div class="sidebar">
+        <a href="EX10HEMANTH.html">URK20CS2077</a>
+        <a href="EX10 NAVEEN.html">URK20CS2078</a>
+        <a href="EX10 JYOTHI.html">URK20CS2064</a>
+        <a href="EX10 JEEVAN.html">URK20CS2074</a>
+    </div>
+    <div class="content" ng-view>
+
+    </div>
+</body>
+</html>
